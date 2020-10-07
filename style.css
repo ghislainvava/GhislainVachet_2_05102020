@@ -2,9 +2,108 @@
 main {
   width: 1439px;
   font-family: 'Raleway', sans-serif;
+  margin: 20px;
+  
+}
+ul {
+  list-style: none;
+}
+section{
+  border: 0,5px black solid;
+  
+}
+/* header*/
+
+figure {
+  margin: 0px;
+  float: left;
 }
 
-header{
+header nav {
+  float: right;
+  right: 20px;
+}
+header nav ul li {
+  margin-left: 20px;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+
+.inscrire {
+  color: #0065FC;
+}
+
+/* Recherche */
+
+#where {
+  margin-top: 50px;
+}
+#where p {
+  font-size: 12px;
+  font-style: italic;
+}
+
+#where h1 {
+  font-size: 18px;
+}
+
+/* hebergements à marseille*/
+#hebergement {
   display: flex;
+}
+
+#hebergement article  {
+  background-color:  #F2F2F2;
+  margin-right: 30px;
+  width: 66%;
+  border-radius: 10px;
+}
+
+#hebergement aside{
+  background-color:  #F2F2F2;
+  width: 34%;
+  border-radius: 10px;
+  
+}
+
+#photosHebergement ul {
+  display: flex;
+  margin: 10px;
+}
+
+#photosHebergement ul li{
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: black 2px solid;
+  margin: 10px;
+  
+}
+#medaillon{
+  overflow: hidden;
+  width: 240px;
+  height: 100px;
+  border: black 2px solid;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 5px ;
+  margin-left: 3px;
+  
+  
+}
+#desc {
+  margin-left: 20px;
+}
+
+#desc h3{
+  font-size: 14px;
+}
+
+#desc p{
+  font-size: 12px;
+  font-style: italic;
 }
 
