@@ -2,16 +2,13 @@
 main {
   width: 1439px;
   font-family: 'Raleway', sans-serif;
-  margin: 20px;
-  
+  margin: 20px; 
 }
+
 ul {
   list-style: none;
 }
-section{
-  border: 0,5px black solid;
-  
-}
+
 /* header*/
 
 figure {
@@ -23,10 +20,12 @@ header nav {
   float: right;
   right: 20px;
 }
+
 header nav ul li {
   margin-left: 20px;
   display: inline-block;
 }
+
 a {
   text-decoration: none;
 }
@@ -37,9 +36,11 @@ a {
 
 /* Recherche */
 
+
 #where {
   margin-top: 50px;
 }
+
 #where p {
   font-size: 12px;
   font-style: italic;
@@ -49,9 +50,22 @@ a {
   font-size: 18px;
 }
 
+.fa-child, .fa-info, .fa-money-bill-wave, .fa-heart, .fa-dog{
+  color: #0065FC;
+}
+
 /* hebergements à marseille*/
+
 #hebergement {
   display: flex;
+}
+
+#starGrey{
+  color: darkgrey;
+}
+
+.starBlue {
+  color: #0065FC;
 }
 
 #hebergement article  {
@@ -64,46 +78,46 @@ a {
 #hebergement aside{
   background-color:  #F2F2F2;
   width: 34%;
-  border-radius: 10px;
-  
+  border-radius: 10px; 
 }
 
-#photosHebergement ul {
+.photosHebergement ul { 
+  flex-flow: row wrap;
   display: flex;
   margin: 10px;
 }
 
-#photosHebergement ul li{
+.photosHebergement ul li{
   width: 250px;
   height: 200px;
   border-radius: 10px;
   background-color: #ffffff;
-  border: black 2px solid;
   margin: 10px;
-  
 }
-#medaillon{
+
+.medaillon{
   overflow: hidden;
   width: 240px;
   height: 100px;
-  border: black 2px solid;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin-top: 5px ;
   margin-left: 3px;
-  
-  
 }
-#desc {
+
+.desc {
   margin-left: 20px;
 }
 
-#desc h3{
+.desc h3{
   font-size: 14px;
 }
 
-#desc p{
+.desc p{
   font-size: 12px;
   font-style: italic;
 }
 
+h2{
+  font-size: 16px;
+}
