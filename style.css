@@ -2,7 +2,7 @@
 main {
   width: 1439px;
   font-family: 'Raleway', sans-serif;
-  margin: 20px; 
+  margin: 50px; 
 }
 
 ul {
@@ -14,17 +14,14 @@ ul {
 header{
   display: flex;
   justify-content: space-between; /* pour mettre sur les coté les containers*/
+  margin-bottom: 25px;
 }
 figure {
   margin: 0px;
 }
 
-header nav {
-  right: 20px;
-}
-
 header nav ul li {
-  margin-left: 20px;
+  margin-right: 70px;
   display: inline-block;
 }
 
@@ -44,32 +41,33 @@ a {
 
 
 #where p {
-  font-size: 12px;
-
-  
+  font-size: 14px; 
+  margin-top: 0px;
 }
 
 #where h1 {
-  font-size: 18px;
+  font-size: 22px;
+  margin-bottom: 5px;
 }
 
 .fa-child, .fa-info, .fa-money-bill-wave, .fa-heart, .fa-dog{
   color: #0065FC;
 }
+
 .search {
-  display: flex;
-  
+  display: flex; 
+  margin-top: 30px;
+  margin-bottom: 40px;
+
 }
+
 #labelSearch {
   width: 235px;
   height: 46px;
-  
   border-top: 2px  #F2F2F2  solid;
-  border-bottom: 2px  #F2F2F2  solid;
- 
-  
-  
+  border-bottom: 2px  #F2F2F2  solid; 
 }
+
 input {
   width: 200px;
   height: 40px;
@@ -88,9 +86,7 @@ input::placeholder{
   background-color: #F2F2F2 ;
   height: 50px;
   width: 50px;
-  border-radius: 10px 0px 0px 10px;
- 
-  
+  border-radius: 15px 0px 0px 15px;
   justify-content: center;
   align-items: center;
 }
@@ -100,7 +96,7 @@ input::placeholder{
   background-color: #0065FC;
   height: 50px;
   width: 135px;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 15px 15px 0px;
   justify-content: center;
   align-items: center;
   
@@ -114,9 +110,12 @@ input::placeholder{
 
 .filters {
   display: flex;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
+.filters h2{
+  margin-right: 35px;
+}
 .filters2 {
   display: flex;
   justify-content: space-evenly;
@@ -154,9 +153,30 @@ display: flex;
   align-items: center;
 }
 
+.circle2 {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: #F2F2F2 solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 
+#info {
+  display: flex;
 
-
+  
+}
+#info p {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+.fa-info {
+  font-size: 70%;
+}
 
   /* hebergements à marseille*/
 
@@ -180,20 +200,11 @@ display: flex;
   background-color:  #F2F2F2;
   margin-right: 30px;
   width: 66%;
-  border-radius: 10px;
-}
-
-#hebergement aside{
-  background-color:  #F2F2F2;
-  width: 34%;
-  border-radius: 10px; 
-}
-
-.photosHebergement ul { 
+  
   
   display: flex;
   flex-flow: row wrap;
-  margin: 10px;
+  justify-content: space-between;
   
 }
 
@@ -203,10 +214,12 @@ display: flex;
   height: 200px;
   border-radius: 10px;
   background-color: #ffffff;
-  margin: 10px;
+  margin-bottom: 25px;
+  
 }
 
 .medaillon{
+
   overflow: hidden;
   width: 240px;
   height: 100px;
@@ -214,6 +227,9 @@ display: flex;
   border-top-right-radius: 10px;
   margin-top: 5px ;
   margin-left: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .desc {
@@ -232,3 +248,4 @@ display: flex;
 h2{
   font-size: 16px;
 }
+
