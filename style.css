@@ -2,19 +2,23 @@
 main {
   width: 1439px;
   font-family: 'Raleway', sans-serif;
-  margin: 50px; 
+  
+}
+section{
+  margin-right: 50px;
+  margin-left: 50px; 
 }
 
 ul {
   list-style: none;
 }
 
-/* header*/
+                                                        /* header*/
 
 header{
   display: flex;
   justify-content: space-between; /* pour mettre sur les coté les containers*/
-  margin-bottom: 25px;
+  margin: 50px 50px 25px 50px;
 }
 
 figure {
@@ -34,11 +38,7 @@ a {
   color: #0065FC;
 }
 
-
-
-
-
-/* Recherche */
+                                                    /* Recherche */
 
 
 #where p {
@@ -100,14 +100,13 @@ input::placeholder{
   border-radius: 0px 15px 15px 0px;
   justify-content: center;
   align-items: center;
-  
 }
 
 .button {
   color: white;
 }
 
-/*filters/*/
+                                                    /*filters/*/
 
 .filters {
   display: flex;
@@ -131,8 +130,7 @@ input::placeholder{
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center; 
 }
 
 .btn2 {
@@ -161,35 +159,29 @@ input::placeholder{
   border: #F2F2F2 solid 2px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center; 
 }
 
 #info {
-  display: flex;
-
-  
+  display: flex; 
 }
+
 #info p {
   font-size: 16px;
   margin-left: 10px;
   margin-top: 3px;
 }
+
 .fa-info {
   font-size: 70%;
 }
 
-  /* hebergements à marseille*/
+                                       /* hebergements à marseille*/
 
 
 
 #hebergement {
-  display: flex;
-  
-}
-
-#hebergment article h2 {
-  margin-left: 40px;
+  display: flex; 
 }
 
 #starGrey{
@@ -204,28 +196,24 @@ input::placeholder{
   background-color:  #F2F2F2;
   border-radius: 10px; 
   width: 66%;
-  margin-right: 40px;
+  margin-right: 40px; 
 }
 
 .photosHebergement ul{
-
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-evenly;  
 }
 
-.photosHebergement ul li{
-  
+.photosHebergement ul li{  
   width: 250px;
   height: 200px;
   border-radius: 10px;
   background-color: #ffffff;
-  margin-bottom: 25px;
-  
+  margin-bottom: 25px; 
 }
 
 .medaillon{
-
   overflow: hidden;
   width: 240px;
   height: 100px;
@@ -255,7 +243,8 @@ h2{
   font-size: 16px;
 }
 
-/*Populaires*/
+
+                                                      /*Populaires*/
 
 aside {
   background-color:  #F2F2F2;
@@ -266,4 +255,129 @@ aside {
 #popular {
   display: flex;
   justify-content: space-between;
+  margin: 15px;
 }
+
+.medaillon2{
+  overflow: hidden;
+  width:130px;
+  height: 130px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 5px ;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popularLi { 
+  display: flex;
+  width: 350px;
+  height: 140px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.desc2 h3{
+
+  width: 150px;
+  font-size: 14px;
+}
+
+.desc2 {
+  margin-left: 15px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.desc2 p{
+  font-size: 12px;
+  font-style: italic;
+}
+
+                                                      /*Activity*/
+
+
+#activity{
+  margin:50px;
+  
+}
+.PhotoActivity{
+display: flex;
+justify-content: space-between;
+
+ }
+
+.photowrap{
+  display: flex;
+  flex-flow: row wrap ;
+}
+ 
+.photoAct1 {
+  width: 308px;
+  height: 456px;  
+}
+
+.photoAct2 {
+  width: 308px;
+  height: 241px;
+}
+  
+.photoAct3 {
+  width: 308px;
+  height: 168px;
+}
+
+.imgAct1, .imgAct2, .imgAct3 {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 308px;
+}
+
+.imgAct1 {
+  height: 400px;
+}
+
+.imgAct2 {
+  height: 185px;
+}
+
+.imgAct3 {
+  height: 112px;
+}
+.nom {
+  width: 308px;
+  height: 56px;
+  box-shadow: 5px 5px 5px  #F2F2F2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  
+  background-color: #F2F2F2; 
+  margin-top: 50px;
+}
+
+footer div {
+  margin: 50px;
+  width: 33%;
+}
+footer div p {
+  font-size: 14px;
+}
+
