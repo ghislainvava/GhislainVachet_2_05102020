@@ -1,19 +1,27 @@
 
-main {
+
+
+
+main{
   width: 1439px;
   font-family: 'Raleway', sans-serif;
   
 }
 section{
-  margin-right: 50px;
-  margin-left: 50px; 
+  margin: 0 50px;
 }
 
 ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
                                                         /* header*/
+
+
 
 header{
   display: flex;
@@ -21,6 +29,9 @@ header{
   margin: 50px 50px 25px 50px;
 }
 
+#navi {
+  display: flex;
+}
 figure {
   margin: 0px;
 }
@@ -32,6 +43,8 @@ header nav ul li {
 
 a {
   text-decoration: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .inscrire {
@@ -116,6 +129,7 @@ input::placeholder{
 .filters h2{
   margin-right: 35px;
 }
+
 .filters2 {
   display: flex;
   justify-content: space-evenly;
@@ -199,13 +213,13 @@ input::placeholder{
   margin-right: 40px; 
 }
 
-.photosHebergement ul{
+.photosHebergement{
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;  
+  flex-wrap: wrap;
 }
 
-.photosHebergement ul li{  
+.photosHebergement a {
+  display: block;
   width: 250px;
   height: 200px;
   border-radius: 10px;
@@ -249,13 +263,32 @@ h2{
 aside {
   background-color:  #F2F2F2;
   border-radius: 10px;
-  width: 33%;
+  padding: 30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  
+  
+  
 }
 
 #popular {
   display: flex;
   justify-content: space-between;
-  margin: 15px;
+  
+}
+
+
+
+.ul{
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  height: 140px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 50px;
+  border: 2px black solid;
 }
 
 .medaillon2{
@@ -270,6 +303,8 @@ aside {
   justify-content: center;
   align-items: center;
 }
+
+
 
 .popularLi { 
   display: flex;
@@ -310,11 +345,6 @@ display: flex;
 justify-content: space-between;
 
  }
-
-.photowrap{
-  display: flex;
-  flex-flow: row wrap ;
-}
  
 .photoAct1 {
   width: 308px;
@@ -358,17 +388,15 @@ justify-content: space-between;
 .nom {
   width: 308px;
   height: 56px;
-  box-shadow: 5px 5px 5px  #F2F2F2;
+  box-shadow: 0px 7px 7px  #F2F2F2;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  
 }
 
 /*Footer*/
 
 footer {
   display: flex;
-  
   background-color: #F2F2F2; 
   margin-top: 50px;
 }
@@ -381,3 +409,16 @@ footer div p {
   font-size: 14px;
 }
 
+@media all and (max-width: 600px) {
+  main{
+    width: 600px;
+  }
+  #navi {
+    flex-flow: row-reverse;
+  }
+
+
+
+
+
+}
