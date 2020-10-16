@@ -1,11 +1,7 @@
 
-
-
-
 main{
   width: 1439px;
-  font-family: 'Raleway', sans-serif;
-  
+  font-family: 'Raleway', sans-serif; 
 }
 section{
   margin: 0 50px;
@@ -20,7 +16,6 @@ a {
 }
 
                                                         /* header*/
-
 
 
 header{
@@ -206,7 +201,7 @@ input::placeholder{
   color: #0065FC;
 }
 
-#hebergement article{
+article{
   background-color:  #F2F2F2;
   border-radius: 10px; 
   width: 66%;
@@ -216,6 +211,8 @@ input::placeholder{
 .photosHebergement{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  
 }
 
 .photosHebergement a {
@@ -224,13 +221,17 @@ input::placeholder{
   height: 200px;
   border-radius: 10px;
   background-color: #ffffff;
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
+  color: black; 
+  
 }
 
-.medaillon{
-  overflow: hidden;
-  width: 240px;
-  height: 100px;
+.photosHebergement h1 {
+  margin-left: 15px;
+}
+
+.cover{
+  object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin-top: 5px ;
@@ -238,6 +239,8 @@ input::placeholder{
   display: flex;
   justify-content: center;
   align-items: center;
+  width:  240px;
+  height: 100px;
 }
 
 .desc {
@@ -253,8 +256,15 @@ input::placeholder{
   font-style: italic;
 }
 
-h2{
+article h2 {
   font-size: 16px;
+  margin-left: 35px;
+}
+
+article h1 {
+  margin-left: 35px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 
@@ -263,36 +273,37 @@ h2{
 aside {
   background-color:  #F2F2F2;
   border-radius: 10px;
-  padding: 30px;
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
-  
-  
+  width: 33%;
+  padding-top: 20px;
   
 }
 
-#popular {
+.popular{
   display: flex;
   justify-content: space-between;
-  
+  width: 350px;
 }
 
-
-
-.ul{
+.photopopular{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photopopular a {
+  color: black;
+  display: flex;
   width: 350px;
   height: 140px;
   border-radius: 10px;
   background-color: #ffffff;
   margin-bottom: 50px;
-  border: 2px black solid;
 }
 
-.medaillon2{
-  overflow: hidden;
+.popularcover{
+  object-fit: cover;
   width:130px;
   height: 130px;
   border-top-left-radius: 10px;
@@ -302,21 +313,10 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-
-
-.popularLi { 
-  display: flex;
-  width: 350px;
-  height: 140px;
-  border-radius: 10px;
-  background-color: #ffffff;
-  margin-bottom: 30px;
 }
 
 .desc2 h3{
-
   width: 150px;
   font-size: 14px;
 }
@@ -338,14 +338,20 @@ aside {
 
 #activity{
   margin:50px;
-  
 }
+
 .PhotoActivity{
 display: flex;
 justify-content: space-between;
-
  }
  
+ .photoWrap{
+   display: flex;
+   flex-direction: column;
+  justify-content: space-between;
+ }
+
+
 .photoAct1 {
   width: 308px;
   height: 456px;  
@@ -391,6 +397,7 @@ justify-content: space-between;
   box-shadow: 0px 7px 7px  #F2F2F2;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  padding-left: 20px;
 }
 
 /*Footer*/
@@ -400,25 +407,34 @@ footer {
   background-color: #F2F2F2; 
   margin-top: 50px;
 }
-
+footer h2 {
+  font-size: 16px;
+}
 footer div {
   margin: 50px;
   width: 33%;
 }
 footer div p {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 @media all and (max-width: 600px) {
   main{
     width: 600px;
+    margin: auto;
   }
-  #navi {
-    flex-flow: row-reverse;
-  }
+  
 
+#where h1{
+  width: 340px;
+}
 
+#btn {
+  width: 50px;
+  border-radius: 15px;
+}
 
-
+.filters {
+  flex-direction: column;
 
 }
