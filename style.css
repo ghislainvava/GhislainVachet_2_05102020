@@ -146,6 +146,7 @@ input::placeholder{
 .logofilters{
   display: flex;
 }
+
 .filters h2{
   margin-right: 35px;
  margin-top: 10px;
@@ -249,7 +250,6 @@ article{
   background-color: #ffffff;
   margin-bottom: 25px;
   color: black; 
-  
 }
 
 .photosHebergement h1 {
@@ -436,8 +436,50 @@ footer div {
 footer div p {
   font-size: 12px;
 }
+                                                                  /*TABLETTE*/
+                                                                
+ 
+@media all and (min-width: 700px) and (max-width:1200px){
 
-@media all and (max-width: 600px) {
+  main{
+    width: 720px;
+    border: solid 2px black;
+  }
+
+  header{
+    width: 90%; 
+    margin: 20px;
+  }
+
+  #where{
+    margin: 0px 0px 0px 15px;
+  }
+                                                                                
+  .filters{
+      flex-direction: column;
+      margin: 0px;
+  }
+                                                                              
+  .btn2{
+    width: 90%;
+      height: 90%;
+  }
+
+  .filters2{
+    margin: 0px 0px 20px 0px;
+  }
+     
+  btn2{
+    margin: 5px;
+  }
+  btn2 h2 {
+    border-right: 5px;
+  }
+}    
+
+
+
+@media all and (max-width: 600px) {                               /*SMARTPHONE*/
   main{
     width: 375px;
     border: black 2px solid;
@@ -546,9 +588,9 @@ article h2 {
 
                                                 /*Activity*/
 .imgAct1, .imgAct2, .imgAct3{
+  
   height: 135px;
   width: 335px;
-  
 }
 
 .nom{
@@ -586,6 +628,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 135px;
+  width: 335px;
 }
 
                                               /*Footer*/
@@ -611,8 +655,5 @@ footer div{
  font-size: 20px;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1200px){
 
-
-
-}
+  
