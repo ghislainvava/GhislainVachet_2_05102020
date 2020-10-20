@@ -1,6 +1,6 @@
 
 main{
-  width: 1369px;
+  width: 1439px;
   font-family: 'Raleway', sans-serif; 
 }
 section{
@@ -50,9 +50,7 @@ a {
   margin-top: 15px;
   color: #0065FC;
   float: right;
-  
-  
-  
+ 
 }
 
                                                     /* Recherche */
@@ -303,7 +301,6 @@ aside {
   flex-flow: column;
   width: 33%;
   padding-top: 20px;
-  
 }
 
 .popular{
@@ -339,7 +336,6 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .desc2 h3{
@@ -363,10 +359,14 @@ aside {
 
 
 .PhotoActivity{
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
  }
- 
+
+ #activity h1{
+   margin-top: 40px;
+ }
+
  .photoWrap{
    display: flex;
    flex-direction: column;
@@ -442,15 +442,15 @@ footer div p {
 @media all and (min-width: 700px) and (max-width:1200px){
 
   main{
-    width: 720px;
+    width: 740px;
     border: solid 2px black;
   }
-
+                                                  /*HEARDERTablette*/
   header{
     width: 90%; 
     margin: 20px;
   }
-
+                                                  /*RECHERCHE TABLETTE*/
   #where{
     margin: 0px 0px 0px 15px;
   }
@@ -475,9 +475,56 @@ footer div p {
   btn2 h2 {
     border-right: 5px;
   }
-}    
+    
+                                                  /*HEBERGEMENT TABLETTE*/
 
 
+#hebergement{
+  flex-direction: column; 
+}
+
+article{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+aside{
+  width: 100%;
+  background-color: white;
+}
+
+                                                  /*POPULAR TABLETTE*/
+
+.photopopular a{
+  box-shadow: 0px 10px 10px  #F2F2F2;
+}
+
+.cover3{
+  width : 150px; height : 150px;
+  border: none;
+  -moz-border-radius : 75px;
+  -webkit-border-radius : 75px;
+  border-radius : 75px;
+}
+                                                    /*ACTIVITY TABLETTE*/
+
+.PhotoActivity{
+  flex-wrap: wrap;
+ height: 1012px;
+  
+}
+.nom{
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+.photoWrap{
+  margin-bottom: 20px ;
+}
+.photoAct3{
+  margin-bottom: 30px;
+}
+}
 
 @media all and (max-width: 600px) {                               /*SMARTPHONE*/
   main{
@@ -489,7 +536,7 @@ footer div p {
     margin:0px;
   }
   
-                                                      /*Header smartphone*/
+                                                      /*HEADER SMARTPHNE*/
   .inscrire{ 
     margin-right: 20px;  
   }
@@ -507,7 +554,7 @@ footer div p {
   .nave{
     order: 3;
   }
-                                                    /*recherche*/
+                                                    /*SEARCH SMARTPHONE */
 
   #where{
     margin-left: 20px;
@@ -540,7 +587,7 @@ footer div p {
   margin-left: 0px;
 }
 
-                                          /*Popular*/
+                                          /*Popular SMARTPHONE*/
 #hebergement{
  flex-flow: column-reverse wrap;
  justify-content: center;
@@ -560,7 +607,7 @@ aside {
   padding: 0px;
   border-radius: 0px;;
 }                                 
-                                            /*Hebergement*/
+                                            /*Hebergement SMARTPHONE*/
                                             
 .photosHebergement a {
   box-shadow: 0px 7px 7px  #F2F2F2;
@@ -586,7 +633,7 @@ article h2 {
 }
 
 
-                                                /*Activity*/
+                                                /*Activity SMARTPHONE*/
 .imgAct1, .imgAct2, .imgAct3{
   
   height: 135px;
@@ -602,6 +649,7 @@ article h2 {
 h3 {
   margin-left: 20px;
 }
+
 .PhotoActivity{
   width: 335px;
   flex-direction: column; 
