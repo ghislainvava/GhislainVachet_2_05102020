@@ -7,10 +7,14 @@ main{
 section{
   margin: 0 50px;
 }
+
 a{
   text-decoration: none;
 }
 
+h2{
+  font-size: 20px;
+}
 
                                                         /* header*/
 
@@ -18,7 +22,6 @@ a{
 header{
   display: flex;
   margin: 0px 50px 25px 50px;
-  
 }
 
 figure {
@@ -30,18 +33,16 @@ figure {
 .nave {
   width: 375px;
   display: flex;
-  margin-right: 70px; 
-  
-  
+  margin-right: 70px;   
 }
+
 #house {
   margin-right: 70px;
   border-top: #0065FC 2px solid;
   width: 187px;
   text-align: center;
   padding-top: 50px;
-  vertical-align: bottom;
-  
+  vertical-align: bottom; 
 }
 
 #house a {
@@ -156,8 +157,9 @@ input::placeholder{
 }
 
 .filters h2{
+  font-size: 18px;
   margin-right: 35px;
- margin-top: 10px;
+  margin-top: 10px;
 }
 
 .filters2 {
@@ -188,7 +190,7 @@ input::placeholder{
 }
 
 .btn2 h2{
-  font-size: 16px;
+  font-size: 18px;
   font-style: inherit;
   margin: 0 15px 0 10px;
   display: flex;
@@ -208,6 +210,7 @@ input::placeholder{
 
 #info {
   display: flex; 
+  margin-top: 20px;
 }
 
 #info p {
@@ -233,7 +236,7 @@ h2 a:hover{
   display: flex; 
 }
 
-#starGrey{
+.starGrey{
   color: #F2F2F2;
 }
 
@@ -260,12 +263,7 @@ article{
   height: 200px;
   border-radius: 10px;
   background-color: #ffffff;
-  margin-bottom: 25px;
-  
-}
-
-.photosHebergement h1 {
-  margin-left: 15px;
+  margin-bottom: 25px; 
 }
 
 .cover{
@@ -295,12 +293,7 @@ article{
 }
 
 article h2 {
-  font-size: 16px;
-  margin-left: 35px;
-}
-
-article h1 {
-  margin-left: 35px;
+  margin-left: 50px;
   margin-bottom: 20px;
   margin-top: 30px;
 }
@@ -367,6 +360,7 @@ aside {
 .desc2 p{
   font-size: 12px;
   font-style: italic;
+  margin-bottom: 30px;
 }
 
                                                       /*Activity*/
@@ -377,8 +371,9 @@ aside {
   justify-content: space-between;
  }
 
- #activity h1{
+ #activity h2{
    margin-top: 40px;
+  
  }
 
  .photoWrap{
@@ -402,37 +397,36 @@ aside {
   height: 168px;
 }
 
-.imgAct1, .imgAct2, .imgAct3 {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.coverAct1, .coverAct2, .coverAct3, .coverAct4 {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  width: 308px;
+  width:308px;
 }
-
-.imgAct1 {
+.coverAct1{
+  object-fit: cover;
   height: 400px;
-}
 
-.imgAct2 {
+  
+}
+.coverAct2, .coverAct4{
+  object-fit: cover;
   height: 185px;
 }
 
-.imgAct3 {
+.coverAct3{
+  object-fit: cover;
   height: 112px;
 }
+
 .nom {
-  width: 308px;
   height: 56px;
+  width:308px;
   box-shadow: 0px 7px 7px  #F2F2F2;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
 .nom h3{
-
   margin-left: 20px;
 }
 
@@ -480,113 +474,105 @@ footer div p {
       margin: 0px;
   }
                                                                               
-  .btn2{
-    width: 90%;
-      height: 90%;
-  }
-
   .filters2{
     margin: 0px 0px 20px 0px;
   }
      
-  .btn2{
-    margin: 5px;
-  }
-  .btn2 h2 {
+  .btn2, .btn2 h2 {
     margin: 5px;
   }
     
                                                   /*HEBERGEMENT TABLETTE*/
 
 
-#hebergement{
-  flex-direction: column; 
-  margin: 0px;
-  
-}
+  #hebergement{
+    flex-direction: column; 
+    margin: 0px;
+    
+  }
 
-article{
-  width: 100%;
-  margin-bottom: 40px;
-}
-
-
-
-                                                  /*POPULAR TABLETTE*/
-
-aside{
-  width: 100%;
-  border-radius: 0px;
-  
-}.photopopular a{
-  box-shadow: 0px 10px 10px  #F2F2F2;
-  width: 220px;
-  height: 200px;
-  flex-direction: column;
-
-}
-
-.popularcover{
-  object-fit: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 210px;
-  height: 108px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 10px;
-}
-
-.photopopular{
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.popular{
-  width: 100%;
-  margin: 20px;
-}
-
-.desc2{
-  width: 220px;
-  height: 90px;
-  margin-left: 5px;
-  justify-content: start;
-}
-
-.desc2 h3{
-  font-size: 12px;
-  width: 220px;
-}
-
-.desc2 p{
-  font-size: 10px;
-  font-style: italic;
-  margin-bottom: 0px;
-}
+  article{
+    width: 100%;
+    margin-bottom: 40px;
+  }
 
 
-                                                    /*ACTIVITY TABLETTE*/
 
-.PhotoActivity{
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 1012px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 10px;
-}
+                                                    /*POPULAR TABLETTE*/
 
-#activity{
-  margin: 0px 20px 0px 20px;
-}
+  aside{
+    width: 100%;
+    border-radius: 0px;
+    
+  }.photopopular a{
+    box-shadow: 0px 10px 10px  #F2F2F2;
+    width: 220px;
+    height: 200px;
+    flex-direction: column;
 
-.photoWrap{
-  margin-bottom: 20px ;
-}
+  }
 
-.photoAct3{
-  margin-bottom: 30px;
-}
+  .popularcover{
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 108px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+
+  .photopopular{
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .popular{
+    width: 100%;
+    margin: 20px;
+  }
+
+  .desc2{
+    width: 220px;
+    height: 90px;
+    margin-left: 5px;
+    justify-content: start;
+  }
+
+  .desc2 h3{
+    font-size: 12px;
+    width: 220px;
+  }
+
+  .desc2 p{
+    font-size: 10px;
+    font-style: italic;
+    margin-bottom: 0px;
+  }
+
+
+                                                      /*ACTIVITY TABLETTE*/
+
+  .PhotoActivity{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 1012px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+
+  #activity{
+    margin: 0px 20px 0px 20px;
+  }
+
+  .photoWrap{
+    margin-bottom: 20px ;
+  }
+
+  .photoAct3{
+    margin-bottom: 30px;
+  }
 
 
 }
@@ -616,15 +602,13 @@ aside{
   }
   
   .nave{
-    order: 3;
-    
+    order: 3; 
   }
 
   #house{
     border-bottom: #0065FC 2px solid;
     border-top: none;
-    margin-right: 0px;
-    
+    margin-right: 0px; 
   }
 
   #acty {
@@ -633,150 +617,147 @@ aside{
 
                                                     /*SEARCH SMARTPHONE */
 
-#where{
+  #where{
+      margin-left: 20px;
+  }
+
+  #labelSearch{
+    width: 250px;
+  }
+
+  #btn {
+    width: 50px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .filters {
+    flex-direction: column; 
+  }
+
+  .logofilters{
+    width: 375px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0px;
+  }
+
+  .filters2{
+    margin-bottom: 20px;
+    margin-left: 0px;
+    
+  }
+
+                                            /*Popular SMARTPHONE*/
+  #hebergement{
+  flex-flow: column-reverse wrap;
+  justify-content: center;
+  }
+
+  article {
+    background-color: white;
+    width: 100%;
+  }
+  article h2 {
+    font-size: 16px; 
     margin-left: 20px;
+  }
+
+  aside {
+    width: 100%;
+    padding: 0px;
+    border-radius: 0px;;
+  }   
+
+                                              /*Hebergement SMARTPHONE*/
+                                              
+  .photosHebergement a {
+    box-shadow: 0px 7px 7px  #F2F2F2;
+    width: 340px; 
+  }
+
+  .photosHebergement{
+    width: 100%;
+  }
+
+  .cover{
+    width: 330px;
+  }
+
+  article{
+    width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+
+  article h2 {
+    margin-left: 20px;
+  }
+
+
+                                                  /*Activity SMARTPHONE*/
+
+  
+  .PhotoActivity{
+    width: 335px;
+    flex-direction: column; 
+  }
+
+  #activity h1 {
+    margin-left: 20px;
+  }
+
+  .photoAct1, .photoAct2, .photoAct3{
+    width: 335px;
+    height: 191px;
+    margin: 20px;
+  }
+
+  #activity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .coverAct1,.coverAct3, .coverAct4{
+    height: 135px;
+    width: 335px;
+    object-position: 25% 25%;
+   
+  }
+
+  .coverAct2{
+    height: 135px;
+    width: 335px;
+  }
+
+  .nom{
+    width: 335px;
+  }
+
+                                                /*Footer*/
+  footer{
+    flex-direction: column;
+  }
+
+  footer div{
+    width: 375px;
+    margin-left: 20px;
+  }
+
+  .button {
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+  }
+
+  .fa-sistrix{
+  color: white;
+  visibility: visible;
+  font-size: 20px;
+  }
+
 }
-
-#labelSearch{
-  width: 250px;
-}
-
-#where h1, #info {
-  width: 340px;
-}
-
-#btn {
-  width: 50px;
-  border-radius: 15px;
-  justify-content: center;
-  align-items: center;
-}
-
-.filters {
-  flex-direction: column; 
-}
-
-.logofilters{
-  width: 375px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: 0px;
-}
-
-.filters2{
-  margin-bottom: 20px;
-  margin-left: 0px;
-}
-
-                                          /*Popular SMARTPHONE*/
-#hebergement{
- flex-flow: column-reverse wrap;
- justify-content: center;
-}
-
-article {
-  background-color: white;
-  width: 100%;
-}
-article h1 {
-  font-size: 16px; 
-  margin-left: 20px;
-}
-
-aside {
-  width: 100%;
-  padding: 0px;
-  border-radius: 0px;;
-}   
-
-                                            /*Hebergement SMARTPHONE*/
-                                            
-.photosHebergement a {
-  box-shadow: 0px 7px 7px  #F2F2F2;
-  width: 340px; 
-}
-
-.photosHebergement{
-  width: 100%;
-}
-
-.cover{
-  width: 330px;
-}
-
-article{
-  width: 375px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0px;
-}
-
-article h2 {
-  margin-left: 20px;
-}
-
-
-                                                /*Activity SMARTPHONE*/
-.imgAct1, .imgAct2, .imgAct3{
-  height: 135px;
-  width: 335px;
-}
-
-h3 {
-  margin-left: 20px;
-}
-
-.PhotoActivity{
-  width: 335px;
-  flex-direction: column; 
-}
-
-#activity h1 {
-  margin-left: 20px;
-}
-
-.photoAct1, .photoAct2, .photoAct3{
-  width: 335px;
-  height: 191px;
-  margin: 20px;
-}
-
-#activity{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.cover2{
-  object-fit: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 135px;
-  width: 335px;
-}
-
-                                              /*Footer*/
-footer{
-  flex-direction: column;
-}
-
-footer div{
-  width: 375px;
-  margin-left: 20px;
-}
-
-.button {
-  height: 1px;
-  overflow: hidden;
-  width: 1px;
-}
-
-.fa-sistrix{
- color: white;
- visibility: visible;
- font-size: 20px;
-}
-
-
   
