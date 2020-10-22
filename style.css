@@ -12,10 +12,6 @@ a{
   text-decoration: none;
 }
 
-h2{
-  font-size: 20px;
-}
-
                                                         /* header*/
 
 
@@ -78,10 +74,6 @@ figure {
   margin-bottom: 5px;
 }
 
-.fa-child, .fa-info, .fa-money-bill-wave, .fa-heart, .fa-dog{
-  color: #0065FC;
-}
-
 .search {
   display: flex; 
   margin-top: 30px;
@@ -128,7 +120,8 @@ input::placeholder{
   border-radius: 0px 15px 15px 0px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
+  
 }
 
 .fa-sistrix{
@@ -139,10 +132,7 @@ input::placeholder{
 }
 
 .button {
-  color:white;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
+  color: white;
 }
 
                                                     /*filters/*/
@@ -152,21 +142,21 @@ input::placeholder{
   margin-right: 25px;
 }
 
+.filters h3{
+  margin-right: 35px;
+}
+
 .logofilters{
   display: flex;
 }
 
-.filters h2{
-  font-size: 18px;
-  margin-right: 35px;
-  margin-top: 10px;
-}
-
-.filters2 {
+.btn2 {
   display: flex;
-  justify-content: space-evenly;
-  margin-left: 20px;
-  height: 45px;
+  height: 43px;
+  border: 2px solid  #F2F2F2;
+  border-left: transparent;
+  border-radius: 25px;
+  margin: 10px 10px 5px 20px;
 }
 
 .circle {
@@ -177,35 +167,24 @@ input::placeholder{
   display: flex;
   justify-content: center;
   align-items: center; 
+  
 }
 
-.btn2 {
- display: flex;
- height: 43px;
- border: 2px solid;
- border-color: #F2F2F2 ;
- border-radius: 25px;
- margin-right: 10px;
- border-left: transparent;
+.fa-child, .fa-info, .fa-money-bill-wave, .fa-heart, .fa-dog{
+  color: #0065FC;
 }
 
-.btn2 h2{
-  font-size: 18px;
-  font-style: inherit;
+h3 a:hover{
+  background-color: #F2F2F2;
+  color: #0065FC;
+  font-size: x-large;
+}
+
+.btn2 h3{
+  font-weight: 300;
   margin: 0 15px 0 10px;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.circle2 {
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
-  border: #F2F2F2 solid 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
 }
 
 #info {
@@ -223,17 +202,24 @@ input::placeholder{
   font-size: 70%;
 }
 
-h2 a:hover{
-  background-color: #F2F2F2;
-  color: #0065FC;
-  font-size: x-large;
+.circle2 {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: #F2F2F2 solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
 }
+
                                        /* hebergements à marseille*/
 
 
 
 #hebergement {
   display: flex; 
+  margin-left: 35px;
 }
 
 .starGrey{
@@ -365,15 +351,13 @@ aside {
 
                                                       /*Activity*/
 
+#activity h2{
+  margin-top: 40px;
+}
 
 .PhotoActivity{
   display: flex;
   justify-content: space-between;
- }
-
- #activity h2{
-   margin-top: 40px;
-  
  }
 
  .photoWrap{
@@ -397,27 +381,6 @@ aside {
   height: 168px;
 }
 
-.coverAct1, .coverAct2, .coverAct3, .coverAct4 {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  width:308px;
-}
-.coverAct1{
-  object-fit: cover;
-  height: 400px;
-
-  
-}
-.coverAct2, .coverAct4{
-  object-fit: cover;
-  height: 185px;
-}
-
-.coverAct3{
-  object-fit: cover;
-  height: 112px;
-}
-
 .nom {
   height: 56px;
   width:308px;
@@ -428,6 +391,26 @@ aside {
 
 .nom h3{
   margin-left: 20px;
+}
+
+.coverAct1, .coverAct2, .coverAct3, .coverAct4 {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width:308px;
+}
+.coverAct1{
+  object-fit: cover;
+  height: 400px;
+
+}
+.coverAct2, .coverAct4{
+  object-fit: cover;
+  height: 185px;
+}
+
+.coverAct3{
+  object-fit: cover;
+  height: 112px;
 }
 
 /*Footer*/
@@ -450,7 +433,7 @@ footer div p {
                                                                   /*TABLETTE*/
                                                                 
  
-@media all and (min-width: 700px) and (max-width:1200px){
+@media all and (min-width: 720px) and (max-width:1200px){
 
   main{
     width: 720px;
@@ -468,7 +451,10 @@ footer div p {
   #where{
     margin: 0px 0px 0px 15px;
   }
-                                                                                
+     
+  .btn2 h3{
+    font-size: 16px;
+  }
   .filters{
       flex-direction: column;
       margin: 0px;
@@ -574,7 +560,6 @@ footer div p {
     margin-bottom: 30px;
   }
 
-
 }
 
 @media all and (max-width: 600px) {                               /*SMARTPHONE*/
@@ -645,14 +630,13 @@ footer div p {
 
   .filters2{
     margin-bottom: 20px;
-    margin-left: 0px;
-    
+    margin-left: 0px; 
   }
 
                                             /*Popular SMARTPHONE*/
   #hebergement{
-  flex-flow: column-reverse wrap;
-  justify-content: center;
+    flex-flow: column-reverse wrap;
+    justify-content: center;
   }
 
   article {
@@ -660,7 +644,6 @@ footer div p {
     width: 100%;
   }
   article h2 {
-    font-size: 16px; 
     margin-left: 20px;
   }
 
@@ -705,7 +688,7 @@ footer div p {
     flex-direction: column; 
   }
 
-  #activity h1 {
+  #activity h2 {
     margin-left: 20px;
   }
 
@@ -725,7 +708,6 @@ footer div p {
     height: 135px;
     width: 335px;
     object-position: 25% 25%;
-   
   }
 
   .coverAct2{
