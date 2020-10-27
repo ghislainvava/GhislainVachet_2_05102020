@@ -1,7 +1,8 @@
 
 main{
   width: 1439px;
-  font-family: 'Raleway', sans-serif; 
+  font-family: 'Raleway', sans-serif;   
+  margin: 0 auto;
 }
 
 section{
@@ -9,9 +10,21 @@ section{
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none; 
 }
 
+a:visited{
+  color: black;
+}
+
+h2{
+  font-size: 21px;
+  font-weight: 600;
+}
+
+h4{
+  font-size: 14px;
+}
                                                         /* header*/
 
 
@@ -45,10 +58,6 @@ figure {
   color: #0065FC;
 }
 
-#acty a {
-  color: black;
-}
-
 #acty {
   padding-top: 50px;
   width: 187px;
@@ -63,43 +72,20 @@ figure {
 
                                                     /* Recherche */
 
-
-#where p {
-  font-size: 14px; 
-  margin-top: 0px;
+#where h1 {
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
-#where h1 {
-  font-size: 22px;
-  margin-bottom: 5px;
+#where p {
+  font-weight: 400; 
+  margin-top: 0px;
 }
 
 .search {
   display: flex; 
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-#labelSearch {
-  display:flex;
-  width: 335px;
-  height: 46px;
-  border-top: 2px  #F2F2F2  solid;
-  border-bottom: 2px  #F2F2F2  solid; 
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px ;
-}
-
-input {
-  width: 200px;
-  height: 40px;
-  border: none;
-  justify-content: center;
-}
-
-input::placeholder{
-  color: black;
-  font-size: 16px; 
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 #mapIcon {
@@ -111,19 +97,40 @@ input::placeholder{
   justify-content: center;
   align-items: center;
 }
-  
-#btn {
+
+#labelSearch {
+  display:flex;
+  width: 335px;
+  height: 46px;
+  border-top: 1px #F2F2F2 solid;
+  border-bottom: 1px #F2F2F2 solid;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px ;
+}
+
+input {
+  border: none;
+  width: 200px;
+  height: 40px;
+  justify-content: center;
+}
+
+input::placeholder{
+  color: black;
+  font-size: 18px; 
+  font-weight: 500;
+}
+
+#button {
+  color: white;
   display: flex;
   background-color: #0065FC;
-  height: 48px;
   width: 135px;
   border-radius: 0px 15px 15px 0px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2px;
-  
 }
-
+  
 .fa-sistrix{
   position: absolute;
   visibility: hidden;
@@ -131,9 +138,6 @@ input::placeholder{
   align-items: center;
 }
 
-.button {
-  color: white;
-}
 
                                                     /*filters/*/
                                                    
@@ -144,6 +148,9 @@ input::placeholder{
 
 .filters h3{
   margin-right: 35px;
+  margin-top: 22px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .logofilters{
@@ -181,7 +188,7 @@ h3 a:hover{
 }
 
 .btn2 h3{
-  font-weight: 300;
+  font-weight: 600;
   margin: 0 15px 0 10px;
   display: flex;
   align-items: center;
@@ -189,7 +196,7 @@ h3 a:hover{
 
 #info {
   display: flex; 
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 #info p {
@@ -219,19 +226,28 @@ h3 a:hover{
 
 #hebergement {
   display: flex; 
+  margin-left: 50px;
+}
+
+#titre{
   margin-left: 35px;
+  margin-top: 40px;
 }
 
 .starGrey{
-  color: #F2F2F2;
+  color: rgb(216, 216, 216);
 }
 
+.fa-star{
+  font-size: 75%;
+}
 .starBlue {
   color: #0065FC;
+  
 }
 
 article{
-  background-color:  #F2F2F2;
+  background-color:  #f1ebeb;
   border-radius: 10px; 
   width: 66%;
   margin-right: 40px; 
@@ -269,16 +285,19 @@ article{
   margin-left: 20px;
 }
 
-.desc h3{
-  font-size: 14px;
+.desc h4{
+  font-size: 16px;
+  margin: 10px auto 5px 0px;
 }
 
 .desc p{
-  font-size: 12px;
-  font-style: italic;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height : 0,4;
 }
 
-article h2 {
+article h3 {
+  font-weight: 600;
   margin-left: 50px;
   margin-bottom: 20px;
   margin-top: 30px;
@@ -300,6 +319,15 @@ aside {
   display: flex;
   justify-content: space-between;
   width: 350px;
+}
+
+
+
+.popular p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+
 }
 
 .photopopular{
@@ -331,9 +359,9 @@ aside {
   align-items: center;
 }
 
-.desc2 h3{
+.desc2 h4{
   width: 150px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .desc2 {
@@ -344,9 +372,8 @@ aside {
 }
 
 .desc2 p{
-  font-size: 12px;
-  font-style: italic;
-  margin-bottom: 30px;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
                                                       /*Activity*/
@@ -382,7 +409,7 @@ aside {
 }
 
 .nom {
-  height: 56px;
+  height: 40px;
   width:308px;
   box-shadow: 0px 7px 7px  #F2F2F2;
   border-bottom-left-radius: 10px;
@@ -391,6 +418,8 @@ aside {
 
 .nom h3{
   margin-left: 20px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .coverAct1, .coverAct2, .coverAct3, .coverAct4 {
@@ -420,15 +449,13 @@ footer {
   background-color: #F2F2F2; 
   margin-top: 50px;
 }
-footer h2 {
-  font-size: 16px;
-}
+
 footer div {
   margin: 50px;
   width: 33%;
 }
 footer div p {
-  font-size: 12px;
+  font-size: 15px;
 }
                                                                   /*TABLETTE*/
                                                                 
@@ -489,13 +516,19 @@ footer div p {
   aside{
     width: 100%;
     border-radius: 0px;
+    }
     
-  }.photopopular a{
+  .photopopular a{
     box-shadow: 0px 10px 10px  #F2F2F2;
     width: 220px;
     height: 200px;
     flex-direction: column;
+  }
 
+
+  .popular{
+    width: 100%;
+    margin: 20px;
   }
 
   .popularcover{
@@ -514,11 +547,6 @@ footer div p {
     justify-content: space-around;
   }
 
-  .popular{
-    width: 100%;
-    margin: 20px;
-  }
-
   .desc2{
     width: 220px;
     height: 90px;
@@ -526,7 +554,7 @@ footer div p {
     justify-content: start;
   }
 
-  .desc2 h3{
+  .desc2 h4{
     font-size: 12px;
     width: 220px;
   }
@@ -573,7 +601,9 @@ footer div p {
   
                                                       /*HEADER SMARTPHNE*/
   .inscrire{ 
-    margin-right: 20px;  
+    margin-right: 20px; 
+    padding-top: 40px;
+    
   }
 
   header {
@@ -584,6 +614,7 @@ footer div p {
   figure {
     margin-left: 20px;
     float: left;
+    padding-top: 20px;
   }
   
   .nave{
@@ -594,10 +625,14 @@ footer div p {
     border-bottom: #0065FC 2px solid;
     border-top: none;
     margin-right: 0px; 
+    padding-top: 30px;
+    padding-bottom: 10px;
   }
 
   #acty {
     border-bottom: #F2F2F2 2px solid;
+    padding-top: 30px;
+    padding-bottom: 10px;
   }
 
                                                     /*SEARCH SMARTPHONE */
@@ -610,12 +645,22 @@ footer div p {
     width: 250px;
   }
 
-  #btn {
+  #button {
     width: 50px;
     border-radius: 15px;
     justify-content: center;
     align-items: center;
+    font-size: 0px;
+   
+
   }
+  .fa-sistrix{
+    color: white;
+    visibility: visible;
+    font-size: 20px;
+    }
+
+                                                    /*FILTERS SMARTPHONE*/
 
   .filters {
     flex-direction: column; 
@@ -633,6 +678,11 @@ footer div p {
     margin-left: 0px; 
   }
 
+  .btn2 {
+    margin-left: 10px;
+  }
+  
+
                                             /*Popular SMARTPHONE*/
   #hebergement{
     flex-flow: column-reverse wrap;
@@ -649,12 +699,16 @@ footer div p {
 
   aside {
     width: 100%;
-    padding: 0px;
+    margin: auto;
     border-radius: 0px;;
   }   
 
                                               /*Hebergement SMARTPHONE*/
                                               
+  #hebergement{
+    margin-left: 0px;
+  }
+  
   .photosHebergement a {
     box-shadow: 0px 7px 7px  #F2F2F2;
     width: 340px; 
@@ -727,18 +781,6 @@ footer div p {
   footer div{
     width: 375px;
     margin-left: 20px;
-  }
-
-  .button {
-    height: 1px;
-    overflow: hidden;
-    width: 1px;
-  }
-
-  .fa-sistrix{
-  color: white;
-  visibility: visible;
-  font-size: 20px;
   }
 
 }
