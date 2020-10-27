@@ -515,7 +515,7 @@ footer div p {
 
   aside{
     width: 100%;
-    border-radius: 0px;
+    border-radius: 10px;
     }
     
   .photopopular a{
@@ -529,6 +529,7 @@ footer div p {
   .popular{
     width: 100%;
     margin: 20px;
+   
   }
 
   .popularcover{
@@ -700,7 +701,7 @@ footer div p {
   aside {
     width: 100%;
     margin: auto;
-    border-radius: 0px;;
+    border-radius: 0px;
   }   
 
                                               /*Hebergement SMARTPHONE*/
